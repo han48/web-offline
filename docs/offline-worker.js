@@ -3,16 +3,16 @@ self.addEventListener('install', function (event) {
         caches.open('lyrics-cache') // Tên cache
             .then(function (cache) {
                 return cache.addAll([
-                    '/', // Router cho phép chạy offline
-                    '/offline', // Router cho phép chạy offline
-                    '/index.html',
-                    '/offline/index.html',
-                    '/normal/index.html',
-                    '/images/1.jpg',
-                    '/images/2.jpg',
-                    '/images/3.jpg',
-                    '/images/4.jpg',
-                    '/images/5.jpg',
+                    '/web-offline', // Router cho phép chạy offline
+                    '/web-offline/offline', // Router cho phép chạy offline
+                    '/web-offline/index.html',
+                    '/web-offline/offline/index.html',
+                    '/web-offline/normal/index.html',
+                    '/web-offline/images/1.jpg',
+                    '/web-offline/images/2.jpg',
+                    '/web-offline/images/3.jpg',
+                    '/web-offline/images/4.jpg',
+                    '/web-offline/images/5.jpg',
                 ]);
             })
     );

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/app.css">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/offline-worker.js?v=1.0.0')
+            navigator.serviceWorker.register('/web-offline/offline-worker.js?v=1.0.0')
                 .then(function(registration) {
                     console.log('Service Worker đăng ký thành công:', registration);
                 })
@@ -19,12 +19,12 @@
     </script>
 </head>
 <body>
-    <div class="full-image" style="background-image: url('images/1.jpg');"></div>
-    <div class="full-image" style="background-image: url('images/2.jpg');"></div>
-    <div class="full-image" style="background-image: url('images/3.jpg');"></div>
-    <div class="full-image" style="background-image: url('images/4.jpg');"></div>
-    <div class="full-image" style="background-image: url('images/5.jpg');"></div>
-    <div class="full-image" style="background-image: url('images/6.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/1.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/2.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/3.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/4.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/5.jpg');"></div>
+    <div class="full-image" style="background-image: url('/web-offline/images/6.jpg');"></div>
     <button class="btn-clear" onclick="clearCacheWorker()">Clear</button>
 </body>
 </html>
