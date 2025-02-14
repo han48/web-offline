@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website support offline mode</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/offline-worker.js?v=1.0.0')
+                .then(function(registration) {
+                    console.log('Service Worker đăng ký thành công:', registration);
+                })
+                .catch(function(error) {
+                    alert('Service Worker đăng ký thất bại:', error);
+                });
+        }
+    </script>
+</head>
+<body>
+    <div class="full-image" style="background-image: url('images/1.jpg');"></div>
+    <div class="full-image" style="background-image: url('images/2.jpg');"></div>
+    <div class="full-image" style="background-image: url('images/3.jpg');"></div>
+    <div class="full-image" style="background-image: url('images/4.jpg');"></div>
+    <div class="full-image" style="background-image: url('images/5.jpg');"></div>
+    <div class="full-image" style="background-image: url('images/6.jpg');"></div>
+    <button class="btn-clear" onclick="clearCacheWorker()">Clear</button>
+</body>
+</html>

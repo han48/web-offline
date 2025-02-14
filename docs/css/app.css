@@ -1,0 +1,19 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.full-image {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn-clear {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    padding: 10px;
+}
