@@ -108,3 +108,22 @@ Việc phát triển một website hỗ trợ ngoại tuyến bằng JavaScript 
 Sẽ thế nào nếu website của công ty bạn hỗ trợ ngoại tuyến?
 Khách hàng không cần mạng internet vẫn có thể tìm hiểu về công ty của bạn khi đang di chuyển trên máy bay.
 Team marketing không còn căng thẳng mỗi khi serve website của công ty bạn tự dưng lăn đùng ra chết khiến cho việc chạy quảng cáo trở thành xấu hổ khi khách hàng quay sang hỏi "Tao không xem được website của mày".
+
+Screen capture:
+
+Khi load dữ liệu lần đầu, tất cả dữ liệu sẽ được tải về máy tính.
+Thời gian tải trên lên tới 3.8s.
+
+![image](https://github.com/han48/web-offline/blob/develop/1st.load.png?raw=true)
+
+Khi load dữ lần thứ 2, hầu hết dữ liệu đều được lấy từ cache, thời gian chỉ còn 67ms (nhanh gấp 58 lần).
+
+![image](https://github.com/han48/web-offline/blob/develop/2nd.load.png?raw=true)
+
+Khi load dữ khi offline, tất cả dữ liệu đều được lấy từ cache, thời gian chỉ còn 20ms (nhanh gấp 3 lần).
+
+![image](https://github.com/han48/web-offline/blob/develop/offline.load.png?raw=true)
+
+Trang không được cài đặt ngoại tuyến thì không thể load.
+
+![image](https://github.com/han48/web-offline/blob/develop/offline.normal.png?raw=true)
