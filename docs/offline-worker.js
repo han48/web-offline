@@ -4,15 +4,14 @@ self.addEventListener('install', function (event) {
             .then(function (cache) {
                 return cache.addAll([
                     '/web-offline', // Router cho phép chạy offline
+                    '/web-offline/index.html', // HTML cho phép chạy offline
                     '/web-offline/offline', // Router cho phép chạy offline
-                    '/web-offline/index.html',
-                    '/web-offline/offline/index.html',
-                    '/web-offline/normal/index.html',
-                    '/web-offline/images/1.jpg',
-                    '/web-offline/images/2.jpg',
-                    '/web-offline/images/3.jpg',
-                    '/web-offline/images/4.jpg',
-                    '/web-offline/images/5.jpg',
+                    '/web-offline/offline/index.html', // HTML cho phép chạy offline
+                    'https://media.githubusercontent.com/media/han48/web-offline/main/docs/images/1.jpg',
+                    'https://media.githubusercontent.com/media/han48/web-offline/main/docs/images/2.jpg',
+                    'https://media.githubusercontent.com/media/han48/web-offline/main/docs/images/3.jpg',
+                    'https://media.githubusercontent.com/media/han48/web-offline/main/docs/images/4.jpg',
+                    'https://media.githubusercontent.com/media/han48/web-offline/main/docs/images/5.jpg',
                 ]);
             })
     );
